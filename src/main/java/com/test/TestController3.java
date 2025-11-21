@@ -14,6 +14,10 @@ public class TestController3 {
     @UrlMapping("/mlay")
     public ModelView testModelView() {
         ModelView modelView = new ModelView("mlay.jsp");
+        String[] depts = {"Info", "RH"};
+        String[] emps = {"Mario", "Mirana"};
+        modelView.addData("listDept", depts);
+        modelView.addData("listEmp", emps);
         return modelView;
     }
 }
