@@ -8,7 +8,7 @@ import com.etu003184.model.ModelView;
 public class TestController3 {
     @UrlMapping("/mirana/{id}")
     public String mirana(int id) {
-        return "Mirana jtm";
+        return "Mirana jtm" + " id = " + id;
     }
 
     @UrlMapping("/mlay")
