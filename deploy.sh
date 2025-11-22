@@ -25,7 +25,8 @@ mkdir -p "$CLASSES_DIR" "$LIB_DIR" "$TARGET_DIR"
 echo "Compiling Java sources..."
 CLASSPATH="$FRAMEWORK_JAR:$CLASSES_DIR"
 find $SRC_DIR -name "*.java" > sources.txt
-javac -cp "$CLASSPATH" -d "$CLASSES_DIR" @sources.txt
+# Ajouter l'option -parameters pour préserver les noms des paramètres
+javac -parameters -cp "$CLASSPATH" -d "$CLASSES_DIR" @sources.txt
 echo "Compilation done. Classes are in $CLASSES_DIR"
 
 # ----------------------------

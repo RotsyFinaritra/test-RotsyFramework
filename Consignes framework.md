@@ -74,3 +74,6 @@ Url("/etudiant/{id}") (dynamique ilay valeur id)
 get (int id) {
 	tokony hita ato zany ilay id io
 } 
+
+### SPRINT 7
+Manampy @GetMapping sy @PostMapping

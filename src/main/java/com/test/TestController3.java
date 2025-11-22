@@ -6,8 +6,8 @@ import com.etu003184.model.ModelView;
 
 @Controller
 public class TestController3 {
-    @UrlMapping("/mirana")
-    public String mirana() {
+    @UrlMapping("/mirana/{id}")
+    public String mirana(int id) {
         return "Mirana jtm";
     }
 
