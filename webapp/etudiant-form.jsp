@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Etudiant Form 1</h1>
-    <form action="${pageContext.request.contextPath}/etudiant/save" method="post">
+    <form action="${pageContext.request.contextPath}/mirana/3184" method="post">
         <label for="id">ID:</label>
         <input type="text" id="id" name="id" required>
         <br>

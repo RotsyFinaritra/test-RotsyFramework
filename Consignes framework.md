@@ -77,3 +77,6 @@ get (int id) {
 
 ### SPRINT 7
 Manampy @GetMapping sy @PostMapping
+
+## SPRINT 8
+rehefa mahita Map<String, Object> anaty argument ana fonction an'ny controller dia fenoina amin'ny parametres azo avy amin'ny requete
