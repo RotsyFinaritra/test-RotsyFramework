@@ -8,6 +8,9 @@
 </head>
 <body>
     <h1>Liste des employés</h1>
+    <form action="${pageContext.request.contextPath}/emp/form" method="get" style="margin-bottom: 20px;">
+        <button type="submit">Ajouter un employé</button>
+    </form>
 <%
     Emp[] employees = (Emp[]) request.getAttribute("emps");
     if (employees != null && employees.length > 0) {

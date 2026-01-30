@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee 
-                             https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
-         version="5.0">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+    version="5.0">
 
     <!-- Configuration du listener pour initialiser les routes -->
     <listener>
@@ -15,18 +14,18 @@
         <servlet-name>FrontServlet</servlet-name>
         <servlet-class>com.etu003184.servlet.FrontServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
-        
+
         <!-- Configuration multipart pour l'upload de fichiers -->
         <multipart-config>
             <!-- Répertoire temporaire vide = utilise $CATALINA_BASE/temp de Tomcat -->
             <location></location>
-            
+
             <!-- Taille max d'un fichier: 10MB -->
             <max-file-size>10485760</max-file-size>
-            
+
             <!-- Taille max de la requête: 20MB -->
             <max-request-size>20971520</max-request-size>
-            
+
             <!-- Fichiers > 1MB sont écrits sur disque temporaire -->
             <file-size-threshold>1048576</file-size-threshold>
         </multipart-config>
@@ -36,6 +35,21 @@
         <servlet-name>FrontServlet</servlet-name>
         <url-pattern>/*</url-pattern>
     </servlet-mapping>
+
+    <context-param>
+        <param-name>auth.sessionKey</param-name>
+        <param-value>user</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>roles.sessionKey</param-name>
+        <param-value>roles</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>roles.separator</param-name>
+        <param-value>,</param-value>
+    </context-param>
 
     <!-- Page d'accueil par défaut -->
     <welcome-file-list>

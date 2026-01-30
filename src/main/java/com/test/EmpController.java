@@ -1,9 +1,11 @@
 package com.test;
 
+import com.etu003184.annotation.Authentified;
 import com.etu003184.annotation.Controller;
 import com.etu003184.annotation.GetMapping;
 import com.etu003184.annotation.Json;
 import com.etu003184.annotation.PostMapping;
+import com.etu003184.annotation.Role;
 import com.etu003184.entity.Emp;
 import com.etu003184.model.ModelView;
 
@@ -38,6 +40,8 @@ public class EmpController {
     // }
 
     @GetMapping("/emp/form")
+    @Authentified
+    // @Authentified
     public ModelView form() {
         return new ModelView("emp-form2.jsp");
     }
