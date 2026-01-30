@@ -80,3 +80,23 @@ Manampy @GetMapping sy @PostMapping
 
 ## SPRINT 8
 rehefa mahita Map<String, Object> anaty argument ana fonction an'ny controller dia fenoina amin'ny parametres azo avy amin'ny requete
+
+## SPRINT 8 bis
+getsion des objets en arguments dans les Controllers, ex: save(Emp e) ou save(Emp[] es)
+
+## SPRINT 9
+gestion api (@Json)
+
+## SPRINT 10
+upload fichiers
+
+## SPRINT 11
+gestion session:
+annotation param @session
+ getMirana(@session Map<String, Object> sessions)
+manampy attribut anaty frontservlet Map<String, Object> sessionsCache = session.getAll()
+
+## SPRINT 11 bis
+protection
+annotation @role("chef") : tsy maintsy authentifie dia manana an'ilay role
+@authorized : tsy maintsy authentifie ninoninona role

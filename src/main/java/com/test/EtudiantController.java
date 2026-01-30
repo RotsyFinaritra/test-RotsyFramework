@@ -33,12 +33,9 @@ public class EtudiantController {
         return new ModelView("etudiant-form2.jsp");
     }
 
-    @PostMapping("/etudiant/save/{id}")
+    @PostMapping("/etudiant/save")
     public String savePost(
-            int id,
-            Map<String, Object> params,
-            @RequestParam("age") int age,
-            String name) {
+            Map<String, Object> params) {
 
         StringBuilder result = new StringBuilder("Params received:\n");
 
@@ -57,9 +54,7 @@ public class EtudiantController {
             result.append(", ");
         }
 
-        return result + "\n----- Etudiant saved with id: " + id +
-                " , name: " + name +
-                " , age: " + age;
+        return result.toString();
     }
 
     @PostMapping("/etudiant/save2")

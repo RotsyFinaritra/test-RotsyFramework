@@ -8,6 +8,7 @@ import com.etu003184.model.ModelView;
 
 @Controller
 public class TestController3 {
+
     @PostMapping("/mirana/{id}")
     public String miranaPost(int id) {
         return "Mirana jtm post" + " id = " + id;

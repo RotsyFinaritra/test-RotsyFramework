@@ -15,7 +15,7 @@ TARGET_DIR="./target"
 TOMCAT_PATH="/opt/apache-tomcat-10.1.28/webapps"
 
 # Chemin vers ton framework JAR
-FRAMEWORK_JAR="./lib/my-framework.jar"
+FRAMEWORK_JAR="./webapp/WEB-INF/lib/rotsy-framework.jar"
 
 mkdir -p "$CLASSES_DIR" "$LIB_DIR" "$TARGET_DIR"
 

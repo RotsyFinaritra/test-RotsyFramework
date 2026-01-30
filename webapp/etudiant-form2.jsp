@@ -6,8 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Etudiant Form 2</h1>
-    <form action="${pageContext.request.contextPath}/etudiant/save/3184" method="post">
+    <h1>ETU3208</h1>
+    <form action="${pageContext.request.contextPath}/etudiant/save" method="post">
         <label for="age">age:</label>
         <input type="text" id="age" name="age" required>
         <br>
